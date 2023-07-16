@@ -15,7 +15,8 @@
                     <Grid HeightRequest="100">
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width=".3*"/>
-                            <ColumnDefinition Width=".7*"/>
+                            <ColumnDefinition Width=".35*"/>
+                            <ColumnDefinition Width=".35*"/>
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
                             <RowDefinition Height=".5*" />
@@ -34,6 +35,29 @@
                                Grid.Column="1"
                                FontSize="Medium"
                                Text="{Binding Price, StringFormat='{0:C}'}"/>
+
+                        <Label Text="{Binding OfferPrice, StringFormat='Offer: {0:C}'}"
+                               Grid.Row="0"
+                               Grid.RowSpan="2"
+                               Grid.Column="2"
+                               BackgroundColor="LightYellow"
+                               VerticalOptions="Center"
+                               HorizontalOptions="Center"
+                               FontAttributes="Bold"
+                               TextColor="Red">
+                            <Label.Triggers>
+                                <DataTrigger TargetType="Label"
+                                     Binding="{Binding HasOffer}"
+                                     Value="True">
+                                    <Setter Property="IsVisible" Value="True" />
+                                </DataTrigger>
+                                <DataTrigger TargetType="Label"
+                                     Binding="{Binding HasOffer}"
+                                     Value="False">
+                                    <Setter Property="IsVisible" Value="False" />
+                                </DataTrigger>
+                            </Label.Triggers>
+                        </Label>
                     </Grid>
                 </Frame>
             </DataTemplate>
