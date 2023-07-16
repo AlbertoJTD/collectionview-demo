@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CollectionViewDemo.ViewModels;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Linq;
@@ -13,6 +14,18 @@ namespace CollectionViewDemo
 		public MainPage()
 		{
 			InitializeComponent();
+			//collectionView.ItemsSource = new string[]
+			//{
+			//	"Can",
+			//	"Sausage",
+			//	"Jam",
+			//	"Juice",
+			//	"Bread",
+			//	"Chicken",
+			//	"Chips",
+			//	"Eggs"
+			//};
+			this.BindingContext = new MainPageViewModel();
 		}
 	}
 }

@@ -133,4 +133,34 @@
       <Name>CollectionViewDemo</Name>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\watermelon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\cucumber.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\orange.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\apple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\tomato.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\yogurt.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\banana.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\grapes.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BundleResource Include="Resources\pineapple.png" />
+  </ItemGroup>
 </Project>
